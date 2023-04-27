@@ -1,0 +1,1 @@
+/* Bassed of Moore’s Voting Algorithm, Best solution*/
