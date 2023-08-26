@@ -1,0 +1,18 @@
+You have to customize the prompt function in your PowerShell profile (%userprofile%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1); it may be blank or even not exist if you have never modified it before.
+
+Open your profile (e.g., open the aforementioned file or while in PowerShell, Notepad $profile)
+
+Add the following to your profile:
+
+function prompt {
+  $p = Split-Path -leaf -path (Get-Location)
+  "$p> "
+}
+Save the profile
+
+Restart PowerShell
+
+Optional. If you get a message that says you are not allowed to run scripts, then you need to copy/paste this line in PowerShell:
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser   --- important
+and restart.

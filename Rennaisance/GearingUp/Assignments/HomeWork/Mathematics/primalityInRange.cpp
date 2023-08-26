@@ -5,7 +5,7 @@ int main()
     //Use Pen and paper to first solve the problem. Then, write the code.
     int n;
     cin >> n;
-    int i = 1;
+    int i = 2;
     while(i <= n)
     {
         int flag = 1;
